@@ -10,10 +10,14 @@ services:
       - key: SUPABASE_URL
         value: https://tqmqdrifrbvupkrufecc.supabase.co
       - key: SUPABASE_KEY
-        value: sb_publishable_bQTJDIyQYhx6P3Wljt82JA_gJmnFud1
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
       - key: OWNER_CHAT_ID
         sync: false
       - key: OPERATOR_IDS
         sync: false
-      - key: ANTHROPIC_API_KEY
+      - key: SPREADSHEET_URL
+        sync: false
+      - key: GOOGLE_CREDS
         sync: false

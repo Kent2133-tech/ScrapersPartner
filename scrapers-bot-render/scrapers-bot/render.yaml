@@ -1,0 +1,19 @@
+services:
+  - type: worker
+    name: scrapers-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: SUPABASE_URL
+        value: https://tqmqdrifrbvupkrufecc.supabase.co
+      - key: SUPABASE_KEY
+        value: sb_publishable_bQTJDIyQYhx6P3Wljt82JA_gJmnFud1
+      - key: OWNER_CHAT_ID
+        sync: false
+      - key: OPERATOR_IDS
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
